@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Jerry.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script type="text/JavaScript">
+
+
+
+
+            function helper(){
+              var message1 = document.getElementById("exampleFormControlSelect1").value;
+              display_message.innerHTML= message1+" light is ON!";
+
+              //Call to API
+              function apiCall() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "cloud.arest.io/4if8xg/digital/2/1", true);
+    xhttp.send();
+  }
+
+  apiCall();
+
+            }
+            function helper1(){
+              var message2 = document.getElementById("exampleFormControlSelect2").value;
+              display_message1.innerHTML= message2+" light is ON!";
+
+              //call to apiCall
+              function apiCall() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "cloud.arest.io/5if8xg/digital/2/1", true);
+    xhttp.send();
+  }
+
+  apiCall();
+
+            }
+            function helper2(){
+              var message3 = document.getElementById("exampleFormControlSelect3").value;
+              display_message2.innerHTML= message3+" light is ON!";
+
+              //call to api
+              function apiCall() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "cloud.arest.io/6if8xg/digital/2/1", true);
+    xhttp.send();
+  }
+
+  apiCall();
+
+            }
+            function helper3(){
+              var message4 = document.getElementById("exampleFormControlSelect4").value;
+              display_message3.innerHTML= message4+" light is ON!";
+
+              //call to api
+
+              function apiCall() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "cloud.arest.io/7if8xg/digital/2/1", true);
+    xhttp.send();
+  }
+
+  apiCall();
+            }
+
+            function showMessage(){
+
+                setTimeout(helper, 0);
+                setTimeout(helper1, 3000);
+                setTimeout(helper2, 6000);
+                setTimeout(helper3, 9000);
+
+              }
+
+
+      </script>
+
+  <style>
+
+  body{
+
+  font: 400 15px/1.8 "Lato", sans-serif;
+  /* color: white; */
+  /* background-color:#09182A; */
+  }
+
+      h1{
+        animation-delay: -2s;
+        position: relative;
+        top: 80%;
+        bottom:80%;
+        left: 80%;
+        transform: translate(-70%,20%);
+      }
+
+
+
+
+      /* Remove the navbar's default margin-bottom and rounded borders */
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 450px}
+
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #e0e0e0;
+        height: 100%;
+      }
+
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;}
+      }
+    </style>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="UI.html">Jerry!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Devices.html">Devices</a></li>
+          <li><a href="Demo.html">Demonstration</a></li>
+          <li><a href="FinalD1.html">Sequence1</a></li>
+          <li><a href="FinalD2.html">Sequence2</a></li>
+          <li><a href="FinalD3.html">Sequence3</a></li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <br><br><br>
+        <p><a href="https://www.accuweather.com/en/us/google-ca/94043/weather-forecast/74907_poi">Weather</a></p>
+        <br>
+        <p><a href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en">News</a></p>
+        <br>
+        <p><a href="https://www.google.com/maps">Maps</a></p>
+      </div>
+      <div class="col-sm-8 text-left">
+        <h1>SMART DEVICE-CONTROLLER</h1>
+  	  <br><br><br>
+  		  <p>The smart device-controller system is a combination of hardware and software that will provide a user
+  	the means to automate device-management.</p>
+    <p>The system will allow a user to create and access profiles that
+  	correspond to specific routines.</p>
+    <p>For each voice-command, the system must accurately interact and perform
+  	the desired operation(s).
+  </p>
+  <p>The system also has a dashboard which lets the user view his/her list of devices
+  	and operate them with GUI as well.</p>
+
+    <br><br>
+        <hr>
+        <br>
+
+      </div>
+      <div class="col-sm-2 sidenav">
+
+        <br><br>
+        <div class="well">
+
+          <p><a href="https://online-voice-recorder.com/">Voice Test</a></p>
+
+        </div>
+        <br>
+        <div class="well">
+          <p>FAQs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-fluid text-center">
+    <p>Project Jerry in action!</p>
+  </footer>
+
+
+  <body>
+
+  <br>
+  <h1>Please select the order in which you want the things to work!</h1>
+  <br><br><br>
+
+  <div class="container">
+
+  <div class="row">
+
+  <div class="col-md-4">
+
+    <form >
+
+    <label for="exampleFormControlSelect1"></label>
+
+    <select class="form-control" id="exampleFormControlSelect1">
+          <option id="r1">Room 1</option>
+          <option id="r2">Room 2</option>
+          <option id="r3">Room 3</option>
+          <option id="r4">Room 4</option>
+    </select>
+
+  </form>
+  <form>
+
+    <label for="exampleFormControlSelect2"></label>
+
+    <select class="form-control" id="exampleFormControlSelect2">
+          <option id="r11">Room 1</option>
+          <option id="r22">Room 2</option>
+          <option id="r33">Room 3</option>
+          <option id="r44">Room 4</option>
+    </select>
+
+  </form>
+
+
+  <form>
+    <label for="exampleFormControlSelect3"></label>
+
+    <select class="form-control" id="exampleFormControlSelect3">
+          <option id="r111">Room 1</option>
+          <option id="r222">Room 2</option>
+          <option id="r333">Room 3</option>
+          <option id="r444">Room 4</option>
+    </select>
+
+  </form>
+
+  <form>
+    <label for="exampleFormControlSelect4"></label>
+
+    <select class="form-control" id="exampleFormControlSelect4">
+          <option id="r1111">Room 1</option>
+          <option id="r2222">Room 2</option>
+          <option id="r3333">Room 3</option>
+          <option id="r4444">Room 4</option>
+    </select>
+
+  </form>
+    <br><br><br>
+
+
+        <input type="button" onclick="showMessage()" value="submit" />
+        <br><br><br><br><br>
+
+
+    </div>
+
+        <div class="col-md-7">
+
+
+            <br><br>
+            <p>  <span id = "display_message"></span> </p>
+            <p>  <span id = "display_message1"></span> </p>
+            <p>  <span id = "display_message2"></span> </p>
+            <p>  <span id = "display_message3"></span> </p>
+        </div>
+
+
+  </div>
+
+  </div>
+
+  </body>
+
+  <footer class="container-fluid text-center">
+    <p>Thank you!</p>
+  </footer>
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+
+
+
+  <iframe width="1150" height="500" src="Project-JERRY1.mp4"  frameborder="0" allowfullscreen>
+  </iframe>
+
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+  </body>
+  </html>
